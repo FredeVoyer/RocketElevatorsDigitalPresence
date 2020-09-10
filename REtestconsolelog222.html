@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Write something in the text field to trigger a function.</p>
+
+<input type="text" id="myInput" oninput="myFunction()">
+
+<p>Write something in the text field to trigger a function.2</p>
+<input type="text" id="myInput2" oninput="myFunction()">
+
+<label>Type of building
+  <select class="tBuil" id="typeBuil"  onchange="myFunction()"> 
+    <option value="">--- Select ---</option>
+    <option value="Residential">Residential</option>
+    <option value="Commercial">Commercial</option>
+    <option value="Corporate">Corporate</option>
+    <option value="Hybrid">Hybrid</option>
+  </select>
+</label>
+<br>
+
+								<!--Radio button for selection of distinct product lines: Standard, Premium or Excelium -->
+								<label>Please, select one product line</label>
+								<label> <input type="radio" id="Standard" name="productLine" value="Standard" onclick="myFunction()">
+								 	Standard</label><br>
+								<label> <input type="radio" id="Premium" name="productLine" value="Premium" onclick="myFunction()">
+									Premium</label><br>
+								<label> <input type="radio" id="Excelium" name="productLine" value="Excelium" onclick="myFunction()">
+									Excelium</label>
+
+								<br>
+
+
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demoSelect"></p>
+<p id="demoRadio"></p>
+
+<script>
+
+var globalx = myFunction();
+function myFunction() {
+  var x = document.getElementById("myInput").value;
+  document.getElementById("demo").innerHTML = "You wrote: " + x;
+  var y = document.getElementById("myInput2").value;
+  document.getElementById("demo2").innerHTML = "You wrote: " + y;
+
+  var z = document.getElementById("typeBuil").value;
+  document.getElementById("demoSelect").innerHTML = "You chose: " + z;
+
+  var zz = document.getElementById("typeBuil").value;
+  document.getElementById("demoSelect").innerHTML = "You chose: " + zz;
+
+  // Radio button for selection of distinct product lines: Standard, Premium or Excelium 
+
+var radios = document.getElementsByName('productLine');
+
+for (var i = 0, length = radios.length; i < length; i++) {
+  if (radios[i].checked) {
+    // Identify the value selected
+   var  productLine = radios[i].value;
+
+    // only one radio can be logically checked, don't check the rest
+    break;
+  }
+}
+
+// Unit price for an elevator shaft (appears after radio box choice) - class="readOnly" id="outUnitPriceElev"
+var outUnitPriceElev;
+	// Determine considering the product line
+		// Standard 7565
+if (productLine === 'Standard')  {
+	outUnitPriceElev=7565;
+}
+		// Premium
+else if (productLine === 'Premium')  {
+	outUnitPriceElev=12345;
+}
+		// Excelium
+else if (productLine === 'Excelium')  {
+	outUnitPriceElev=15400;
+}
+//else	
+
+//document.getElementById("demoRadio").innerHTML = "You chose: " + productLine;
+document.getElementById("demoRadio").innerHTML = "The unit price is " + outUnitPriceElev;
+
+ console.log(outUnitPriceElev);
+  //return x;
+} 
+
+
+
+//console.log(globalx);
+
+</script>
+
+</body>
+</html>
