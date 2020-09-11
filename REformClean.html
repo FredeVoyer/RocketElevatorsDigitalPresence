@@ -212,105 +212,112 @@
 											</label>
 											<br>
 											<!-- Residential section-->
-											<label>Number of apartments in the residential building
-												<input class="res" id="resApart" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of floors contained in the residential building
-												<input class="res" id="resFloors" type="text"  onchange="majForm()"> 
-											</label>
-											<br>
-											<label>Number of basements contained in the residential building
-												<input class="res" id="resBasem" type="text" onchange="majForm()">
-											</label>
-											<br>
-			
+											<div id="resSec">
+												<label>Number of apartments in the residential building
+													<input class="res" id="resApart" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of floors contained in the residential building
+													<input class="res" id="resFloors" type="text"  onchange="majForm()"> 
+												</label>
+												<br>
+												<label>Number of basements contained in the residential building
+													<input class="res" id="resBasem" type="text" onchange="majForm()">
+												</label>
+												<br>
+											</div>
 											<!-- Commercial section-->
-											<label>Number of distinct businesses in the commercial building
-												<input class="com" id="comBiz" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of floors contained in the commercial building
-												<input class="com" id="comFloors" type="text" onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of basements contained in the commercial building
-												<input class="com" id="comBasem" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of parking spaces available in the commercial building
-												<input class="com" id="comParkSpace" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of elevator cages to be deployed in the commercial building
-												<input class="com" id="comCages" type="text"  onchange="majForm()">
-											</label>
-											<br>
-																			
+											<div id="comSec">
+												<label>Number of distinct businesses in the commercial building
+													<input class="com" id="comBiz" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of floors contained in the commercial building
+													<input class="com" id="comFloors" type="text" onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of basements contained in the commercial building
+													<input class="com" id="comBasem" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of parking spaces available in the commercial building
+													<input class="com" id="comParkSpace" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of elevator cages to be deployed in the commercial building
+													<input class="com" id="comCages" type="text"  onchange="majForm()">
+												</label>
+												<br>
+											</div>							
 											<!-- Corporate section-->
-											<label>Number of separate tenant companies in the corporate building
-												<input class="cor" id="corBiz" type="text"  onchange="majForm()" >
-											</label>
+											<div id="corSec">
+												<label>Number of separate tenant companies in the corporate building
+													<input class="cor" id="corBiz" type="text"  onchange="majForm()" >
+												</label>
+												<br>
+												<label>Number of floors contained in the corporate building
+													<input class="cor" id="corFloors" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of basements contained in the corporate building
+													<input class="cor" id="corBasem" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of parking spaces available in the corporate building
+													<input class="cor" id="corParkSpaces" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Maximum number of occupants per floor in the corporate building 
+													<input class="cor" id="corMaxOccFloor" type="text" onchange="majForm()">
+												</label>
 											<br>
-											<label>Number of floors contained in the corporate building
-												<input class="cor" id="corFloors" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of basements contained in the corporate building
-												<input class="cor" id="corBasem" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of parking spaces available in the corporate building
-												<input class="cor" id="corParkSpaces" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Maximum number of occupants per floor in the corporate building 
-												<input class="cor" id="corMaxOccFloor" type="text" onchange="majForm()">
-											</label>
-											<br>
-			
+											</div>
 											<!-- Hybrid section-->
-											<label>Number of distinct businesses in the hybrid building
-												<input class="hyb" id="hybBiz" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of floors contained in the hybrid building
-												<input class="hyb" id="hybFloors" type="text" onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of basements contained in the hybrid building
-												<input class="hyb" id="hybBasem" type="text" onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of parking spaces available in the hybrid building
-												<input class="hyb" id="hybParkSpaces" type="text"  onchange="majForm()">
-											</label>
-											<br>
-											<label>Maximum number of occupants per floor in the hybrid building 
-												<input class="hyb" id="hybMaxOccFloor" type="number" onchange="majForm()">
-											</label>
-											<br>
-											<label>Number of hours of activity of the hybrid building (the maximum being 24)
-												<input class="hyb" id="hybHrsAct" type="number"  onchange="majForm()">
-											</label>
-											<br>
-											<br>
-											<br>
+											<div id="hybSec">
+												<label>Number of distinct businesses in the hybrid building
+													<input class="hyb" id="hybBiz" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of floors contained in the hybrid building
+													<input class="hyb" id="hybFloors" type="text" onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of basements contained in the hybrid building
+													<input class="hyb" id="hybBasem" type="text" onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of parking spaces available in the hybrid building
+													<input class="hyb" id="hybParkSpaces" type="text"  onchange="majForm()">
+												</label>
+												<br>
+												<label>Maximum number of occupants per floor in the hybrid building 
+													<input class="hyb" id="hybMaxOccFloor" type="number" onchange="majForm()">
+												</label>
+												<br>
+												<label>Number of hours of activity of the hybrid building (the maximum being 24)
+													<input class="hyb" id="hybHrsAct" type="number"  onchange="majForm()">
+												</label>
+												<br>
+												<br>
+												<br>
+											</div>
 											<!--Estimate of the number of lift cages (recommended number of elevators; read only)) 
 											 pour output js-->
 											 <div id="output1"></div>
 											<br>
 											<br>
 											<!--Radio button for selection of distinct product lines: Standard, Premium or Excelium -->
-											<label>Please, select one product line</label>
-											<label> <input type="radio" id="Standard" name="productLine" value="Standard" onclick="majForm()">
-												 Standard</label><br>
-											<label> <input type="radio" id="Premium" name="productLine" value="Premium" onclick="majForm()">
-												Premium</label><br>
-											<label> <input type="radio" id="Excelium" name="productLine" value="Excelium" onclick="majForm()">
-												Excelium</label>
-											<br>
-											<br>
+											<div id="radSec">
+												<label>Please, select one product line</label>
+												<label> <input type="radio" id="Standard" name="productLine" value="Standard" onclick="majForm()">
+													Standard</label><br>
+												<label> <input type="radio" id="Premium" name="productLine" value="Premium" onclick="majForm()">
+													Premium</label><br>
+												<label> <input type="radio" id="Excelium" name="productLine" value="Excelium" onclick="majForm()">
+													Excelium</label>
+												<br>
+												<br>
+											</div>
 											<!--Unit price for an elevator shaft (appears after radio box choice) pour output js -->
 											<div id="output2"></div>
 											<br>

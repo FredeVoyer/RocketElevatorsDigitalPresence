@@ -11,7 +11,25 @@
 
 *************************************************** **/
 
-// Hiding sections before the building type is selected
+// Hiding sections before the building type is selectedfunction myFunction() {
+  /*document.getElementByClassName("res").style.display = "none";
+  document.getElementByClassName("com").style.display = "none";
+  document.getElementByClassName("cor").style.display = "none";
+  document.getElementByClassName("hyb").style.display = "none";*/
+
+  document.getElementById("resSec").style.display = "none";
+  document.getElementById("comSec").style.display = "none";
+  document.getElementById("corSec").style.display = "none";
+  document.getElementById("hybSec").style.display = "none";
+  document.getElementById("radSec").style.display = "none";
+
+
+
+//var resClass document.getElementByClassName("res");
+//resClass.style.display = "block";
+
+
+// Getting and updating or pushing values to the form
 function majForm() {
 	// Read the content of the html form 
 	//var theForm = document.forms["step1"];
@@ -111,8 +129,13 @@ function majForm() {
 
 
 		// Hide sections of the building types not selected
+		document.getElementById("resSec").style.display = "block";
+		document.getElementById("output2").style.display = "block";
 
 		// Show section of the building type is selected (and the rest of the form?)
+		document.getElementById("corSec").style.display = "none";
+		document.getElementById("comSec").style.display = "none";
+		document.getElementById("hybSec").style.display = "none";
 
 	}
 	// Commercial
@@ -121,8 +144,13 @@ function majForm() {
 		outCages=comCagesNum;
 
 		// Hide sections of the building types not selected
+		document.getElementById("comSec").style.display = "block";
+		document.getElementById("output2").style.display = "block";
 
 		// Show section of the building type is selected (and the rest of the form?)
+		document.getElementById("resSec").style.display = "none";
+		document.getElementById("corSec").style.display = "none";
+		document.getElementById("hybSec").style.display = "none";
 
 	}
 	// Corporate
@@ -140,11 +168,14 @@ function majForm() {
 		outCages= elevPerColumn * elevColumn;
 
 
-
-
 		// Hide sections of the building types not selected
+		document.getElementById("corSec").style.display = "block";
+		document.getElementById("output2").style.display = "block";
 
 		// Show section of the building type is selected (and the rest of the form?)
+		document.getElementById("resSec").style.display = "none";
+		document.getElementById("comSec").style.display = "none";
+		document.getElementById("hybSec").style.display = "none";
 
 
 	}
@@ -165,12 +196,29 @@ function majForm() {
 
 
 		// Hide sections of the building types not selected
+		document.getElementById("hybSec").style.display = "block";
+		document.getElementById("output2").style.display = "block";
 
 		// Show section of the building type is selected (and the rest of the form?)
+		document.getElementById("resSec").style.display = "none";
+		document.getElementById("comSec").style.display = "none";
+		document.getElementById("corSec").style.display = "none";
 
 
 	}
-	//else	
+	// Hide all sections
+	else {
+		document.getElementById("resSec").style.display = "none";
+		document.getElementById("comSec").style.display = "none";
+		document.getElementById("corSec").style.display = "none";
+		document.getElementById("hybSec").style.display = "none";
+		document.getElementById("radSec").style.display = "none";
+		document.getElementById("output1").style.display = "none";
+		document.getElementById("output2").style.display = "none";
+		document.getElementById("output3").style.display = "none";
+	  
+	}
+		
 
 	
 	// Radio button for selection of distinct product lines: Standard, Premium or Excelium 
