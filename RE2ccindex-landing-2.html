@@ -2,9 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Smarty - Multipurpose + Admin</title>
+		<title>Rocket elevators - Commercial and corporate buildings</title>
 		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		<meta name="Author" content="Frederic Voyer" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -14,69 +14,21 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
 
 		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/bootstrap/css/REbootstrap.min.css" rel="stylesheet" type="text/css" />
 		
 		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/REessentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/RElayout.css" rel="stylesheet" type="text/css" />
 
 		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/REheader-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
 	</head>
 
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg"
-	-->
 	<body class="smoothscroll enable-animation">
 
 		<!-- wrapper -->
 		<div id="wrapper">
-
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
 				<!-- TOP NAV  (barre de navigation) -->
@@ -90,24 +42,13 @@
 
 						<!-- Logo  (mettre logo RE) href="#top-->
 						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets/images/_smarty/r2.png" alt="" />
+							<img src="assets/images/custom/r2.png" alt="" />
 						</a>
 
-						<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
+						<!-- Top Nav -->
 						<div class="navbar-collapse collapse float-right nav-main-collapse">
 							<nav class="nav-main">
 
-								<!-- 
-									.nav-onepage
-									Required for onepage navigation links
-									
-									Add .external for an external link!
-								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active"><!-- HOME -->
 										<a href="#slider">
@@ -119,21 +60,11 @@
 											FEATURES
 										</a>
 									</li>
-									<!--<li>--><!-- PRICING 
-										<a href="#pricing">
-											PRICING
-										</a>
-									</li> -->
 									<li><!-- TESTIMONIALS -->
 										<a href="#testimonials">
 											TESTIMONIALS
 										</a>
 									</li>
-									<!-- <li PURCHASE 
-										<a class="external" href="#purchase">
-											PURCHASE
-										</a>
-									</li> -->
 								</ul>
 
 							</nav>
@@ -147,8 +78,8 @@
 
 
 			<!-- HOME -->
-			<section id="slider" class="fullheight" style="background:url('demo_files/images/corpBuild.jpg')">
-				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+			<section id="slider" class="fullheight" style="background:url('assets/images/custom/corBuildEl.jpg')">
+				<div class="overlay dark-5"></div>
 
 				<div class="display-table">
 					<div class="display-table-cell vertical-align-middle">
@@ -158,12 +89,6 @@
 							<h1 class="m-0 fs-50 fw-300 wow fadeInUp" data-wow-delay="0.4s">Commercial and corporate  buildings</h1>
 							<p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">That's where our legend grew bigger </p>
 							
-							<!-- <div class="mt-30">
-								<a href="#" class="btn btn-3d btn-lg btn-teal"><i class="glyphicon glyphicon-th-large"></i>FREE TRIAL</a>
-								<span class="fs-17 hidden-xs-down btn btn-lg">&nbsp; OR &nbsp;</span>
-								<a href="#" class="btn btn-3d btn-lg btn-red"><i class="glyphicon glyphicon-user"></i>START FOR A SIBSCRIPTION</a>
-							</div> -->
-
 						</div>
 
 					</div>
@@ -188,7 +113,7 @@
 
 					><div class="row">
 						<div class="col-sm-4">
-								<img class="img-fluid" src="demo_files/images/451x300/buildBiz451x300.jfif" alt="img" />
+								<img class="img-fluid" src="assets/images/custom/451x300/buildBiz451x300.jfif" alt="img" />
 
 
 							<h3 class="mt-10">Building elevators</h3>
@@ -196,168 +121,22 @@
 						</div>
 
 						<div class="col-sm-4">
-								<img class="img-fluid" src="demo_files/images/451x300/elMAint451x300.jpg" alt="img" />
+								<img class="img-fluid" src="assets/images/custom/451x300/elMAint451x300.jpg" alt="img" />
 						
 							<h3 class="mt-10">Maintenance and technical support</h3>
 							<p>Our staff is available 24 hours a day and 7 days a week, because you never know when your elevator becomes out of order. We also do periodicsl inspection to make sure nothing is about to break down for new and old buildings.</p>
 						</div>
 
 						<div class="col-sm-4">
-							<img class="img-fluid" src="demo_files/images/451x300/revOpp451x300.jpg" alt="img" />
+							<img class="img-fluid" src="assets/images/custom/451x300/revOpp451x300.jpg" alt="img" />
 							<h3 class="mt-10">Upgrades</h3>
 							<p>If you want the best, we can make technological upgrades to improve the safety, the speed and the style of your elevator.</p>
 						</div>
 
 					</div>
-
-					<!-- FEATURED BOXES 3 
-					<div class="row">
-						<div class="col-sm-4">
-							<img class="img-fluid" src="demo_files/images/451x300/buildBiz451x300.jfif" alt="img" />
-				
-				
-							<h3 class="mt-10">Building elevators</h3>
-							<p>Our "green" way of building is stellar. Our competitors try to keep us with our groundbreaking method that is constantly improving and our energy efficiency elevators.</p>
-						</div>
-					
-						<div class="col-sm-4">
-								<img class="img-fluid" src="demo_files/images/451x300/elMAint451x300.jpg" alt="img" />
-						
-							<h3 class="mt-10">Maintenance and technical support</h3>
-							<p>Our staff is available 24 hours a day and 7 days a week, because you never know when your elevator becomes out of order. We also do periodicsl inspection to make sure nothing is about to break down for new and old buildings.</p>
-						</div>
-					
-						<div class="col-sm-4">
-							<img class="img-fluid" src="demo_files/images/451x300/revOpp451x300.jpg" alt="img" />
-							<h3 class="mt-10">Upgrades</h3>
-							<p>If you want the best, we can make technological upgrades to improve the safety, the speed and the style of your elevator.</p>
-						</div>
-					</div>
-					 /FEATURED BOXES 3 -->
-
-					<!-- FEATURED BOXES 3 
-					<div class="row">
-						<div class="col-md-3 col-6">
-							<div class="text-center">
-								<i class="ico-light ico-lg ico-rounded ico-hover et-trophy"></i>
-								<h4>Winners</h4>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-6">
-							<div class="text-center">
-								<i class="ico-light ico-lg ico-rounded ico-hover et-gears"></i>
-								<h4>Responsive</h4>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-6">
-							<div class="text-center">
-								<i class="ico-light ico-lg ico-rounded ico-hover et-tools"></i>
-								<h4>Costomizable</h4>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-6">
-							<div class="text-center">
-								<i class="ico-light ico-lg ico-rounded ico-hover et-layers"></i>
-								<h4>Easy to Modify</h4>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus. </p>
-							</div>
-						</div>
-					</div>
-					 /FEATURED BOXES 3 -->
-
 				</div>
 			</section>
 			<!-- /FEATURES -->
-
-
-
-
-			<!-- PRICING 
-			<section id="pricing">
-				<div class="container">
-
-					<header class="text-center mb-60">
-						<h2>Our Pricing</h2>
-						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
-						<hr />
-					</header>
-
-					<div class="row">
-
-						<div class="col-md-3 col-sm-3">
-							
-							<div class="price-clean">                                
-								<h4>
-									<sup>$</sup>15<em>/month</em>
-								</h4>
-								<h5> Starter </h5>
-								<hr />
-								<p>For individuals looking for something simple to get started.</p>
-								<hr />
-								<a href="#" class="btn btn-3d btn-teal">Learn More</a>
-							</div>
-						
-						</div>
-
-						<div class="col-md-3 col-sm-3">
-							
-							<div class="price-clean">                                
-								<h4>
-									<sup>$</sup>25<em>/month</em>
-								</h4>
-								<h5> BUSINESS </h5>
-								<hr />
-								<p>For individuals looking for something simple to get started.</p>
-								<hr />
-								<a href="#" class="btn btn-3d btn-teal">Learn More</a>
-							</div>
-						
-						</div>
-
-						<div class="col-md-3 col-sm-3">
-							
-							<div class="price-clean price-clean-popular"> 
-								<div class="ribbon"> 
-									<div class="ribbon-inner">POPULAR</div>
-								</div>
-								
-								<h4>
-									<sup>$</sup>35<em>/month</em>
-								</h4>
-								<h5> DEVELOPER </h5>
-								<hr />
-								<p>For individuals looking for something simple to get started.</p>
-								<hr />
-								<a href="#" class="btn btn-3d btn-primary">Learn More</a>
-							</div>
-						
-						</div>
-
-						<div class="col-md-3 col-sm-3">
-							
-							<div class="price-clean">                                
-								<h4>
-									<sup>$</sup>50<em>/month</em>
-								</h4>
-								<h5> VIP </h5>
-								<hr />
-								<p>For individuals looking for something simple to get started.</p>
-								<hr />
-								<a href="#" class="btn btn-3d btn-teal">Learn More</a>
-							</div>
-						
-						</div>
-
-					</div>
-
-				</div>
-			</section> -->
-			<!-- /PRICING -->
-
-
 
 			<!-- TESTIMONIALS -->
 			<section id="testimonials" class="alternate">
@@ -369,14 +148,11 @@
 						<hr />
 					</header>
 
-					<!-- 
-						Note: remove class="rounded" from the img for squared image!
-					-->
 					<div class="row mb-60">
 						<div class="col-md-4">
 							<div class="testimonial testimonial-bordered p-15">
 								<figure class="float-left">
-									<img class="rounded" src="demo_files/images/people/300x300/2-min.jpg" alt="" />
+									<img class="rounded" src="assets/images/custom/people/300x300/2-min.jpg" alt="" />
 								</figure>
 								<div class="testimonial-content">
 									<p> They are always prompt to deliver services when I need them!</p>
@@ -390,7 +166,7 @@
 						<div class="col-md-4">
 							<div class="testimonial testimonial-bordered p-15">
 								<figure class="float-left">
-									<img class="rounded" src="demo_files/images/people/300x300/1-min.jpg" alt="" />
+									<img class="rounded" src="assets/images/custom/people/300x300/1-min.jpg" alt="" />
 								</figure>
 								<div class="testimonial-content">
 									<p>They are always professionnal and courteous. It'a real pleasure to interact with them.</p>
@@ -404,7 +180,7 @@
 						<div class="col-md-4">
 							<div class="testimonial testimonial-bordered p-15">
 								<figure class="float-left">
-									<img class="rounded" src="demo_files/images/people/300x300/6-min.jpg" alt="" />
+									<img class="rounded" src="assets/images/custom/people/300x300/6-min.jpg" alt="" />
 								</figure>
 								<div class="testimonial-content">
 									<p>WOWWW! They did exactly what we wanted and more and it's very rare that it happens for us from others, because we are very demanding.</p>
@@ -419,36 +195,6 @@
 				</div>
 			</section>
 			<!-- /TESTIMONIALS -->
-
-
-
-
-			
-
-
-
-			<!-- 
-			<section class="alternate">
-				<div class="container">
-					
-					<div class="text-center">
-						<h2 class="wow fadeInUp m-0" data-wow-delay="0.3s">DOES SMARTY CONVINCED YOU?</h2>
-
-						<p class="lead font-lato fs-30 wow fadeInUp mb-60" data-wow-delay="0.5s">Building a Landing Page was never so Easy &amp; Interactive.</p>
-						
-						<div class="mt-30">
-							<a href="#" class="btn btn-3d btn-lg wow fadeInUp btn-teal" data-wow-delay="0.7"><i class="glyphicon glyphicon-th-large"></i>FREE TRIAL</a>
-							<span class="fs-17 hidden-xs-down wow fadeInUp" data-wow-delay="1s">&nbsp; OR &nbsp;</span>
-							<a href="#" class="btn btn-3d btn-lg wow fadeInUp btn-red" data-wow-delay="0.59"><i class="glyphicon glyphicon-user"></i>START FOR A SIBSCRIPTION</a>
-						</div>
-					</div>
-
-				</div>
-			</section>
-			 / -->
-
-
-
 
 
 			<!-- FOOTER -->
@@ -533,7 +279,5 @@
 
 		<script src="assets/js/scripts.js"></script>
 		
-		<!-- STYLESWITCHER - REMOVE -->
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
 	</body>
 </html>
